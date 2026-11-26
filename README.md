@@ -1,6 +1,6 @@
-[![Bounty](https://img.shields.io/badge/bounty-news--image--20261126-blue)](https://make.fun/bounty/news-image-20261126)
-[![make.fun](https://img.shields.io/badge/made%20for-make.fun-black)](https://make.fun)
-[![Referral](https://img.shields.io/badge/referral-make.fun%2Fr%2Fe0ar5hn0-green)](https://make.fun/r/e0ar5hn0)
+[![make.fun · news-image-20261126](https://make.fun/badge/news-image-20261126.svg)](https://make.fun/bounty/news-image-20261126?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261126)
+[![rank](https://make.fun/badge/news-image-20261126/casg7322-ui/news-image-20261126/rank.svg)](https://make.fun/bounty/news-image-20261126/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261126)
+[![reward](https://make.fun/badge/news-image-20261126/casg7322-ui/news-image-20261126/reward.svg)](https://make.fun/bounty/news-image-20261126?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261126)
 
 # Thursday 26 November 2026: 50 verified stories, 10 regions — Hormuz mines claim, Nasdaq whiplash
 
