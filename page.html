@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1024px;height:1024px;background:#f7f3ea;font-family:'Noto Serif','DejaVu Serif',Georgia,serif;color:#1a1a1a;overflow:hidden}
+.page{width:1024px;height:1024px;padding:8px 12px 6px;display:flex;flex-direction:column;gap:4px}
+/* MASTHEAD */
+.mast{height:48px;border-top:4px solid #1a1a1a;border-bottom:2px solid #1a1a1a;display:flex;align-items:center;justify-content:space-between;padding:0 4px}
+.mast h1{font-size:32px;letter-spacing:3px;font-weight:900}
+.mast .sub{font-family:'Noto Sans','DejaVu Sans',sans-serif;font-size:10px;text-align:right;line-height:1.35;color:#333}
+.mast .sub b{font-size:12px}
+/* STAT STRIP */
+.stats{height:40px;background:#1a1a1a;color:#f7f3ea;display:flex;align-items:stretch;font-family:'Noto Sans','DejaVu Sans',sans-serif}
+.stat{flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;border-right:1px solid #444}
+.stat:last-child{border-right:none}
+.stat .v{font-size:14px;font-weight:700}
+.stat .l{font-size:7.5px;letter-spacing:.4px;color:#ccc;text-transform:uppercase}
+/* TIMELINE */
+.tl{height:20px;display:flex;align-items:center;gap:0;font-family:'Noto Sans','DejaVu Sans',sans-serif;font-size:8.5px;border-bottom:1px solid #999;overflow:hidden;white-space:nowrap}
+.tl b{color:#8b0000;font-size:8.5px;letter-spacing:1px;margin-right:6px}
+.tl span{margin-right:14px}
+.tl span i{font-style:normal;color:#8b0000;font-weight:700}
+/* HEROES */
+.heroes{height:165px;display:flex;gap:8px}
+.hero{flex:1;border:1.5px solid #1a1a1a;background:#fff;padding:6px 9px 5px;position:relative;display:flex;flex-direction:column}
+.hero .k{font-family:'Noto Sans','DejaVu Sans',sans-serif;font-size:8px;letter-spacing:1.5px;color:#8b0000;font-weight:700}
+.hero h2{font-size:15.5px;line-height:1.12;margin:3px 0 3px}
+.hero p{font-size:9px;line-height:1.3;color:#333;flex:1}
+.hero .art{height:26px;margin-top:3px}
+.hero .src{font-family:'Noto Sans','DejaVu Sans',sans-serif;font-size:7.5px;color:#666;border-top:1px solid #ddd;padding-top:3px}
+.claim{display:inline-block;background:#8b0000;color:#fff;font-family:'Noto Sans','DejaVu Sans',sans-serif;font-size:7px;font-weight:700;padding:1px 4px;letter-spacing:1px;vertical-align:2px;margin-left:4px}
+/* SECTION LABELS */
+.lab{font-family:'Noto Sans','DejaVu Sans',sans-serif;font-size:8px;letter-spacing:2px;font-weight:700;color:#8b0000}
+/* MID CARDS */
+.mid{height:276px;display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:88px;gap:6px}
+.mc{border:1px solid #bbb;background:#fff;padding:6px 7px 5px;display:flex;flex-direction:column;overflow:hidden}
+.mc .n{font-family:'Noto Sans','DejaVu Sans',sans-serif;font-size:8px;font-weight:700;color:#8b0000}
+.mc h3{font-size:11px;line-height:1.15;margin:2px 0 3px}
+.mc p{font-size:8.5px;line-height:1.3;color:#333;flex:1}
+.mc .src{font-family:'Noto Sans','DejaVu Sans',sans-serif;font-size:7px;color:#777}
+/* BRIEFS */
+.briefs{height:304px;display:grid;grid-template-columns:repeat(5,1fr);grid-auto-rows:40px;gap:4px}
+.br{border-top:1.5px solid #1a1a1a;padding:3px 5px 2px;overflow:hidden}
+.br .n{font-family:'Noto Sans','DejaVu Sans',sans-serif;font-size:8px;font-weight:700;color:#8b0000}
+.br h4{font-size:8.5px;line-height:1.15;font-weight:700}
+.br .src{font-family:'Noto Sans','DejaVu Sans',sans-serif;font-size:6.5px;color:#777;margin-top:1px}
+/* REGION STRIP */
+.reg{height:26px;background:#e8e2d2;border:1px solid #bbb;display:flex;align-items:center;justify-content:center;gap:10px;font-family:'Noto Sans','DejaVu Sans',sans-serif;font-size:8.5px}
+.reg b{color:#8b0000}
+/* DATE CHECK */
+.dc{height:58px;border:1.5px solid #8b0000;background:#fdf6f0;padding:4px 8px 3px}
+.dc h5{font-family:'Noto Sans','DejaVu Sans',sans-serif;font-size:8.5px;letter-spacing:1.5px;color:#8b0000}
+.dc p{font-size:8px;line-height:1.3;color:#333;margin-top:2px}
+.dc p b{color:#8b0000}
+/* FOOTER */
+.foot{height:14px;display:flex;justify-content:space-between;align-items:center;font-family:'Noto Sans','DejaVu Sans',sans-serif;font-size:7.5px;color:#666;border-top:1px solid #999;padding-top:2px}
+</style></head><body><div class="page">
+
+<div class="mast"><h1>THE WORLD TODAY</h1><div class="sub"><b>Thursday 26 November 2026</b><br>50 verified stories &middot; 10 regions &middot; Thanksgiving Day<br>Coverage: Wed 25 Nov 00:00 &ndash; Thu 26 Nov ~00:15 UTC</div></div>
+
+<div class="stats">
+<div class="stat"><div class="v">23,585.80 &minus;0.62%</div><div class="l">Nasdaq &middot; intraday &minus;4.6%</div></div>
+<div class="stat"><div class="v">50,182.95 +0.33%</div><div class="l">Dow &middot; erased 1,100-pt drop</div></div>
+<div class="stat"><div class="v">KOSPI &minus;6.16%</div><div class="l">Samsung &minus;9.9% &middot; SK Hynix &minus;11.1%</div></div>
+<div class="stat"><div class="v">2,100+ in 24 hours</div><div class="l">Record Canary Is. arrivals</div></div>
+<div class="stat"><div class="v">$139 / month +36%</div><div class="l">Bangladesh garment wage</div></div>
+<div class="stat"><div class="v">US Q3 GDP 4.3%</div><div class="l">Oct core PCE 3.3% y/y</div></div>
+</div>
+
+<div class="tl"><b>UTC TIMELINE</b><span><i>00:18</i> Shenzhou-24 launches</span><span><i>03:56</i> Docks at Tiangong</span><span><i>13:30</i> US GDP 4.3% released</span><span><i>14:30</i> Nasdaq slides 4.6% intraday</span><span><i>16:46</i> IRGC mine claim</span><span><i>21:00</i> Markets close: Dow +0.33%, Nasdaq &minus;0.62%</span></div>
+
+<div class="heroes">
+<div class="hero"><div class="k">HERO 1 &middot; MIDDLE EAST &middot; MILITARY / ENERGY</div><h2>Iran claims tankers hit mines in Strait of Hormuz<span class="claim">CLAIM</span></h2><p>IRGC Navy says two tankers struck naval mines and caught fire on unapproved routes; later claims add a third tanker and an LNG carrier. No vessel names, no independent confirmation.</p><svg class="art" viewBox="0 0 300 34" width="100%" height="34"><path d="M0 26 Q40 20 80 26 T160 26 T240 26 T300 26 V34 H0 Z" fill="#9db8c4"/><rect x="120" y="12" width="70" height="9" rx="2" fill="#5a3b2a"/><rect x="140" y="4" width="8" height="9" fill="#5a3b2a"/><circle cx="60" cy="18" r="5" fill="#333"/><path d="M60 10 v-4 M60 26 v4 M52 18 h-4 M68 18 h4 M54 12 l-3 -3 M66 12 l3 -3" stroke="#333" stroke-width="1.5"/><circle cx="230" cy="20" r="4" fill="#8b0000"/></svg><div class="src">IRGC via Reuters / OilPrice &middot; Wed 25 Nov</div></div>
+<div class="hero"><div class="k">HERO 2 &middot; NORTH AMERICA &middot; ECONOMY / MARKETS</div><h2>Wall Street whiplash: Nasdaq plunges 4.6%, then rebounds</h2><p>Nasdaq fell as much as 4.6% intraday, briefly 20% below its record, before bargain hunters pulled it back to &minus;0.62% at 23,585.80. Dow erased a 1,100-point drop to close +0.33%.</p><svg class="art" viewBox="0 0 300 34" width="100%" height="34"><path d="M0 8 L50 12 L90 26 L130 10 L180 28 L230 14 L300 6" fill="none" stroke="#8b0000" stroke-width="2.5"/><path d="M0 30 H300" stroke="#999" stroke-width="1"/></svg><div class="src">Reuters &middot; Wed 25 Nov</div></div>
+<div class="hero"><div class="k">HERO 3 &middot; OCEANIA &middot; POLITICS / SECURITY</div><h2>Australia and Solomon Islands sign treaty barring foreign bases</h2><p>Treaty signed in Canberra makes Australia the Solomons&rsquo; security partner of choice and precludes any foreign military or security base, as its 2022 pact with China lapses in 2027.</p><svg class="art" viewBox="0 0 300 34" width="100%" height="34"><rect x="60" y="6" width="70" height="22" rx="1" fill="#f5efe0" stroke="#8b0000" stroke-width="1.5"/><path d="M70 12 h50 M70 17 h50 M70 22 h30" stroke="#333" stroke-width="1.5"/><circle cx="180" cy="17" r="10" fill="none" stroke="#8b0000" stroke-width="2"/><path d="M175 17 l4 4 l7 -8" fill="none" stroke="#8b0000" stroke-width="2"/><line x1="212" y1="4" x2="212" y2="26" stroke="#333" stroke-width="1.5"/><path d="M212 4 l16 5 l-16 5 Z" fill="#1a3a5c"/><line x1="240" y1="4" x2="240" y2="26" stroke="#333" stroke-width="1.5"/><path d="M240 4 l16 5 l-16 5 Z" fill="#c8a24a"/></svg><div class="src">Reuters / Just Security &middot; Wed 25 Nov</div></div>
+</div>
+
+<div class="lab">THE DAY IN DETAIL &middot; STORIES 4&ndash;15</div>
+<div class="mid">
+<div class="mc"><div class="n">04 &middot; GLOBAL &middot; TRADE</div><h3>US proposes 25% tariff on India without a trade deal</h3><p>USTR Section 301 findings target 14 economies; 25% on Indian goods, 17% with a reciprocal deal. Comments due 5 Jan 2027.</p><div class="src">USTR via Hindu BusinessLine / Reuters &middot; 25 Nov</div></div>
+<div class="mc"><div class="n">05 &middot; EUROPE &middot; MIGRATION</div><h3>Record 2,100-plus migrants reach Canary Islands in a day</h3><p>Overcrowded boats land mostly at El Hierro, beating the old record of ~1,500. Arrivals in 2026 now 28,103.</p><div class="src">Reuters &middot; 25 Nov</div></div>
+<div class="mc"><div class="n">06 &middot; SOUTH ASIA &middot; LABOUR</div><h3>Bangladesh raises garment minimum wage 36% to $139</h3><p>Monthly minimum rises to $139 after protests, in the sector that anchors the export economy.</p><div class="src">Reuters &middot; 25 Nov</div></div>
+<div class="mc"><div class="n">07 &middot; EAST ASIA &middot; SPACE</div><h3>Shenzhou-24 docks at Tiangong with Pakistan&rsquo;s first astronaut</h3><p>Launched 00:18 UTC, docked 03:56 UTC. Muhammad Zeeshan Ali is the first Pakistani in orbit.</p><div class="src">Xinhua / CMSA via Reuters &middot; 25 Nov</div></div>
+<div class="mc"><div class="n">08 &middot; AFRICA &middot; DISASTER</div><h3>Fuel tanker fire kills at least 31 on Cairo ring road</h3><p>Tanker overturned above Tunnel 10 in Warraq and exploded; 21 injured, 25+ vehicles charred. Toll preliminary.</p><div class="src">AP / CNN &middot; 25 Nov</div></div>
+<div class="mc"><div class="n">09 &middot; EUROPE &middot; MILITARY</div><h3>Ukraine hits Russian refineries and airfield overnight</h3><p>Drones reportedly struck Syzran and Kuibyshev refineries and Savasleyka airfield; Russia says 145 drones downed.</p><div class="src">Reuters / h.ua &middot; 25 Nov</div></div>
+<div class="mc"><div class="n">10 &middot; MIDDLE EAST &middot; MILITARY</div><h3>Houthis claim strike on Saudi Arabia&rsquo;s largest refinery <span class="claim">CLAIM</span></h3><p>Houthis say they hit Ras Tanura, causing fires. No independent confirmation; coalition says it downed four drones.</p><div class="src">Houthi statement via Just Security &middot; 25 Nov</div></div>
+<div class="mc"><div class="n">11 &middot; NORTH AMERICA &middot; ECONOMY</div><h3>US economy grew 4.3% in Q3; inflation still hot in October</h3><p>GDP revised up from 3.4%; October headline PCE 3.8% y/y, core 3.3% &mdash; biggest annual rise since Nov 2023.</p><div class="src">BEA via Reuters &middot; 25 Nov</div></div>
+<div class="mc"><div class="n">12 &middot; NORTH AMERICA &middot; TECH</div><h3>Dell shares slide despite record $54.9bn quarter</h3><p>Record revenue (+103%) and $22.0bn AI server sales, yet shares fell on debt-funded AI doubts.</p><div class="src">Morningstar / TradingView &middot; 25 Nov</div></div>
+<div class="mc"><div class="n">13 &middot; LATIN AMERICA &middot; SECURITY</div><h3>All hostages freed as police storm Cartagena supermarket</h3><p>Forces freed the last hostages of ~30 held 17 hours after a failed armoured-car robbery; one captor killed.</p><div class="src">Reuters / AFP &middot; 25 Nov</div></div>
+<div class="mc"><div class="n">14 &middot; EUROPE &middot; SPORT</div><h3>Lille stun Bayern as Liverpool win 3-0 in Champions League</h3><p>Lille beat Bayern 2-1; Liverpool won 3-0 at Club Brugge; Barcelona 4-1 at Sabah; Inter 2-0; PSG 2-2 Roma.</p><div class="src">UEFA &middot; 25 Nov</div></div>
+<div class="mc"><div class="n">15 &middot; NORTH AMERICA &middot; WEATHER</div><h3>Storms threaten Thanksgiving travel for 81.5 million Americans</h3><p>AAA: 81.5m travel 50+ miles as a coastal storm hits the Northeast; ~4,800 flights delayed by Wednesday evening.</p><div class="src">Weather.com / AAA / Fox News &middot; 25 Nov</div></div>
+</div>
+
+<div class="lab">IN BRIEF &middot; STORIES 16&ndash;50</div>
+<div class="briefs">
+<div class="br"><div class="n">16</div><h4>Israel kills Hamas security chief in Gaza strike</h4><div class="src">Just Security / AP &middot; 25 Nov</div></div>
+<div class="br"><div class="n">17</div><h4>RSF drone strikes kill 19 civilians in Sudan&rsquo;s Blue Nile capital</h4><div class="src">Just Security &middot; 25 Nov</div></div>
+<div class="br"><div class="n">18</div><h4>Ebola responders trapped as fighting rages in Ituri</h4><div class="src">UN News / WHO &middot; 25 Nov</div></div>
+<div class="br"><div class="n">19</div><h4>Poland plans no-fly zone on eastern border</h4><div class="src">h.ua &middot; 25 Nov</div></div>
+<div class="br"><div class="n">20</div><h4>EU adds 15 Russian defence-linked entities to export list</h4><div class="src">h.ua &middot; 25 Nov</div></div>
+<div class="br"><div class="n">21</div><h4>Ukraine&rsquo;s laser air-defence destroys drone in first combat use</h4><div class="src">h.ua &middot; 25 Nov</div></div>
+<div class="br"><div class="n">22</div><h4>Russian strikes kill two in Odesa, wound two in Kyiv</h4><div class="src">Just Security &middot; 25 Nov</div></div>
+<div class="br"><div class="n">23</div><h4>US tells citizens to leave Iran immediately <span class="claim">REPORTED</span></h4><div class="src">US Virtual Embassy in Iran &middot; 25 Nov</div></div>
+<div class="br"><div class="n">24</div><h4>Macy&rsquo;s Thanksgiving parade postponed to Saturday in storm first</h4><div class="src">Reuters &middot; 25 Nov</div></div>
+<div class="br"><div class="n">25</div><h4>Second judge blocks Trump&rsquo;s birthright citizenship order</h4><div class="src">Reuters &middot; 25 Nov</div></div>
+<div class="br"><div class="n">26</div><h4>US famine monitor to halt reporting as funds run out</h4><div class="src">Reuters &middot; 25 Nov</div></div>
+<div class="br"><div class="n">27</div><h4>Boehly-led group signs deal for Lukoil&rsquo;s overseas assets</h4><div class="src">Reuters / CNN &middot; 25 Nov</div></div>
+<div class="br"><div class="n">28</div><h4>Pope voices concern over COP31 failure</h4><div class="src">AP via Just Security &middot; 25 Nov</div></div>
+<div class="br"><div class="n">29</div><h4>Judges urge prosecutors to drop Netanyahu bribery case</h4><div class="src">Reuters &middot; 25 Nov</div></div>
+<div class="br"><div class="n">30</div><h4>Nigeria seizes $227m meth lab, arrests five Mexicans</h4><div class="src">Reuters &middot; 25 Nov</div></div>
+<div class="br"><div class="n">31</div><h4>Nine dead, 17 trapped in flooded Indonesia gold mine</h4><div class="src">Reuters &middot; 25 Nov</div></div>
+<div class="br"><div class="n">32</div><h4>Restaurant blast in Hanoi kills at least six</h4><div class="src">Al Jazeera &middot; 25 Nov</div></div>
+<div class="br"><div class="n">33</div><h4>Aramco and S-OIL open $7bn Shaheen project in Seoul</h4><div class="src">Reuters &middot; 25 Nov</div></div>
+<div class="br"><div class="n">34</div><h4>SK hynix plans 100 trillion won in shareholder returns</h4><div class="src">Korea Exchange via Reuters &middot; 25 Nov</div></div>
+<div class="br"><div class="n">35</div><h4>Homeplus to shut all 67 hypermarkets from 27 November</h4><div class="src">Reuters &middot; 25 Nov</div></div>
+<div class="br"><div class="n">36</div><h4>Indonesia&rsquo;s Danantara posts Rp259.6tn profit in first audit</h4><div class="src">Reuters &middot; 25 Nov</div></div>
+<div class="br"><div class="n">37</div><h4>US and China hold first agriculture working group in Beijing</h4><div class="src">Reuters &middot; 25 Nov</div></div>
+<div class="br"><div class="n">38</div><h4>Sulphur shortage threatens Indonesia nickel projects</h4><div class="src">Wood Mackenzie via Reuters &middot; 25 Nov</div></div>
+<div class="br"><div class="n">39</div><h4>Air India targets &#8377;6,000 crore in cost savings</h4><div class="src">Reuters &middot; 25 Nov</div></div>
+<div class="br"><div class="n">40</div><h4>Li Auto Q3 loss narrows as revenue rises 5%</h4><div class="src">Reuters &middot; 25 Nov</div></div>
+<div class="br"><div class="n">41</div><h4>Asian markets dive as Huang&rsquo;s Nvidia return fails to calm AI fears</h4><div class="src">Reuters / Al Jazeera &middot; 25 Nov</div></div>
+<div class="br"><div class="n">42</div><h4>Huang&rsquo;s Nvidia return puts open-weight AI debate in focus</h4><div class="src">Reuters &middot; 25 Nov</div></div>
+<div class="br"><div class="n">43</div><h4>Meta fined &euro;805m in Italy over Facebook photos <span class="claim">REPORTED</span></h4><div class="src">Korben.info &middot; 25 Nov</div></div>
+<div class="br"><div class="n">44</div><h4>UK watchdog warns on AI as Meta launches adapted Muse</h4><div class="src">Reuters &middot; 25 Nov</div></div>
+<div class="br"><div class="n">45</div><h4>EU to join next round of Ukraine&ndash;Russia talks</h4><div class="src">h.ua &middot; 25 Nov</div></div>
+<div class="br"><div class="n">46</div><h4>Ukraine&ndash;Russia prisoner swap may start in late November</h4><div class="src">h.ua &middot; 25 Nov</div></div>
+<div class="br"><div class="n">47</div><h4>Russia strikes Naftogaz gas production facilities</h4><div class="src">h.ua &middot; 25 Nov</div></div>
+<div class="br"><div class="n">48</div><h4>Leaked data puts Russian war dead at 490,334</h4><div class="src">BBC via Just Security &middot; 25 Nov</div></div>
+<div class="br"><div class="n">49</div><h4>Putin says Ukraine kept hitting refineries despite Trump plea</h4><div class="src">Just Security &middot; 25 Nov</div></div>
+<div class="br"><div class="n">50</div><h4>MSF suspends work in South Sudan after abduction</h4><div class="src">PANA / MSF &middot; 25 Nov</div></div>
+</div>
+
+<div class="reg"><b>REGIONS</b><span>Europe 15</span><span>North America 8</span><span>East Asia 7</span><span>Africa 5</span><span>Middle East 4</span><span>SE Asia 4</span><span>Global 3</span><span>South Asia 2</span><span>Latin America 1</span><span>Oceania 1</span></div>
+
+<div class="dc"><h5>DATE CHECK &mdash; WHAT WAS EXCLUDED AND WHY</h5><p><b>Coverage:</b> Wed 25 Nov 00:00 &ndash; Thu 26 Nov ~00:15 UTC. All 50 stories above are dated Wed 25 Nov 2026; nothing verifiable was found in the 00:00&ndash;00:15 UTC sliver on 26 Nov. <b>Excluded as stale:</b> COP31 collapse 22 Nov &middot; Merkury sinking 22 Nov &middot; ICJ Myanmar ruling 19 Nov &middot; ATP Finals 22 Nov &middot; France protests 21 Nov &middot; ICE Seattle shooting 21 Nov &middot; Kerch Bridge 17 Nov &middot; Huawei verdict 24 Nov &middot; Sinner surgery 24 Nov &middot; Lakers 23 Nov &middot; &ldquo;El Chapo Isidro&rdquo; capture 20 Nov &middot; CIA breach 24 Nov &middot; Decathlon breach 22 Nov &middot; Riyadh tower strike 24 Nov &middot; Cikande fire 23 Nov &middot; Ma death sentence 23 Nov &middot; UK Myanmar sanctions 23 Nov.</p></div>
+
+<div class="foot"><span>THE WORLD TODAY &middot; Thursday 26 November 2026 &middot; 50 verified stories, 10 regions</span><span>Sources as credited per story &middot; CLAIM = single-source claim, unconfirmed</span></div>
+
+</div></body></html>
